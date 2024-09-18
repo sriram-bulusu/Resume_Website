@@ -1,0 +1,200 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ram Bulusu - Resume</title>
+
+<meta name="viewport" content="width=device-width"/>
+<meta name="description" content="Ram Bulusu's Resume."/>
+<meta charset="UTF-8"> 
+
+<link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
+<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body id="top">
+<div id="cv" class="instaFade">
+	<div class="mainDetails">
+		<div id="headshot" class="quickFade">
+			<img src="{% static 'images/headshot.jpg' %}" alt="Ram Bulusu" />
+		</div>
+		
+		<div id="name">
+			<h1 class="quickFade delayTwo">Ram Bulusu</h1>
+			<h2 class="quickFade delayThree">SWE Intern @ Adobe</h2>
+		</div>
+		
+		<div id="contactDetails" class="quickFade delayFour">
+			<ul>
+				<li>svb8149@nyu.edu</a></li>
+				<li><a href="http://www.linkedin.com/in/sriram-bulusu">http://www.linkedin.com/in/sriram-bulusu</a></li>
+				<li>9179002723</li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div id="mainArea" class="quickFade delayFive">
+		<section>
+			<article>
+				<div class="sectionTitle">
+					<h1>Personal Profile</h1>
+				</div>
+				
+				<div class="sectionContent">
+					<p>I am a second year grad student at NYU who just finished up a summer internhsip at Adobe. I am a talented engineer that is interested in breaking into the data engineering space, with previous internhsip experience at a fintech startup in India. I have experience working with Python, Java, Scala, SQL, and various machine learning and deep learning techniques. I have published a paper during my undergrad on a novel method to detect brain tumors by studying MR images of brain scans. </p>
+				</div>
+			</article>
+			<div class="clear"></div>
+		</section>
+		
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Work Experience</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<h2>SWE Intern @ Adobe</h2>
+					<p class="subDetails">May 2024 - August 2023</p>
+					<p>
+						<li>
+							Enhanced the performance of an internal tool dealing with the optimization of de-linking identity graphs with minimal loss in nodes and edges across multiple customers.
+						</li>
+						
+						<li>
+							Implemented a deterministic approach for selecting the best graph configuration, preventing linkage of identity graphs during creation.
+						</li>
+						
+						<li>
+							Packaged and published selection logic as an API, enabling AI-driven suggestions made available to the customer through the UI.
+						</li>
+						
+						<li>
+							Achieved a 40% reduction in number of shared-device graphs for customers managing over 3 million user profiles.
+						</li>
+						
+						<li>
+							Wrote in-depth documentation to provide my team with extensive details regarding various aspects of my project.
+						</li>
+						
+					</p>
+				</article>
+				
+				<article>
+					<h2>Data Engineering Intern @ AllCloud</h2>
+					<p class="subDetails">October 2022 - June 2023</p>
+					<p>
+						<li>
+							Collaborated with the ML team in building a loan approval model on AWS SageMaker.
+						</li>
+
+						<li>
+							Architected a complete data pipeline involving collection, cleaning, and pattern analysis leveraging Python; integrated XGBoost algorithm to
+							craft a predictive model, seamlessly deployed on a SageMaker endpoint with 89% accuracy rate.
+						</li>
+
+						<li>
+							Created a Python-based ‘Interpretable AI’ module using Shapley values and SHAP library, offering transparency into model decisions.
+						</li>
+
+						<li>
+							Configured a scalable Data Migration Service (DMS) task, harnessing SQL queries to transfer data from MariaDB to AWS S3 as parquet
+							files. Implemented scheduling through AWS Step Function for seamless automation.
+						</li>
+						
+						<li>
+							Recognized redundancy in ETL pipeline and executed modifications in PySpark scripts to optimize S3 file structure during data loading,
+							resulting in a substantial 35% reduction in monthly billing of AWS Glue.
+						</li>
+						
+					</p>
+				</article>
+				
+				<article>
+					<h2>SWE Intern @ CodeFacts</h2>
+					<p class="subDetails">June 2021 - August 2021</p>
+					<p>
+						<li>
+							Developed a Python tool to automate the collection and preprocessing of company’s CRM data.
+						</li>
+						
+						<li>
+							Built a lead-scoring Random Forest model that identifies qualified leads with 91% accuracy, improving sales team focus and conversion rates.
+						</li>
+						
+						<li>
+							Utilized Tableau for data visualization, analyzing lead conversion rates to extract actionable insights for the client.
+						</li>
+						
+					</p>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Key Skills</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<ul class="keySkills">
+					<li>Python</li>
+					<li>Java</li>
+					<li>SQL</li>
+					<li>Tensorflow</li>
+					<li>PyTorch</li>
+					<li>AWS</li>
+					<li>Django</li>
+					<li>Scala</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Education</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<h2>New York University</h2>
+					<p class="subDetails">MS Comuter and Information Science</p>
+					<p>
+						Software Engineering, Machine Learning, Big Data, Deep Learning, Database Systems
+					</p>
+				</article>
+				
+				<article>
+					<h2>Vellore Institute of Technology</h2>
+					<p class="subDetails">BTech in Computer Science and Engineering</p>
+					<p>
+						Statistics, Linear Algebra, Advanced Programming Techniques, Quantum Physics, Natural Language Processing
+					</p>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+	</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3753241-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>
